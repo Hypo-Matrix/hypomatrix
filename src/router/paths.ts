@@ -11,6 +11,10 @@ const paths = {
     root: "/services",
     details: (slug: string) => `/services/${slug}`,
   },
+  careers: {
+    root: "/careers",
+    details: (slug: string) => `/careers/${slug}`,
+  },
   team: {
     root: "/team",
     details: (slug: string) => `/team/${slug}`,

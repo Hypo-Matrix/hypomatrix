@@ -8,4 +8,5 @@ export enum CmsContentType {
   Project = "Project",
   Service = "Service",
   Website = "Website",
+  Career = "Career",
 }

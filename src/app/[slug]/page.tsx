@@ -43,6 +43,7 @@ export async function generateStaticParams() {
           "faq",
           "works",
           "services",
+          "careers",
           "team",
         ].includes(item.slug)
     )

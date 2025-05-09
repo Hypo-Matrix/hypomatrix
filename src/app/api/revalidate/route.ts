@@ -1,4 +1,5 @@
 import { blogServiceTags } from "@/services/apis/blog";
+import { careerServiceTag } from "@/services/apis/career";
 import { clientServiceTags } from "@/services/apis/client";
 import { faqServiceTags } from "@/services/apis/faq";
 import { memberServiceTags } from "@/services/apis/member";
@@ -7,6 +8,7 @@ import { projectServiceTags } from "@/services/apis/project";
 import { serviceServiceTags } from "@/services/apis/service";
 import { websiteServiceTags } from "@/services/apis/website";
 import { TBlogPost } from "@/types/cms/blog";
+import { TCareer } from "@/types/cms/career";
 import { CmsContentType } from "@/types/cms/enums";
 import { TPage } from "@/types/cms/page";
 import { TProject } from "@/types/cms/project";
@@ -93,6 +95,12 @@ export async function POST(req: NextRequest) {
         const data = body.data as TService;
         revalidateTag(serviceServiceTags.services);
         revalidateTag(serviceServiceTags.service(data.slug));
+        break;
+      }
+      case CmsContentType.Career: {
+        const data = body.data as TCareer;
+        revalidateTag(careerServiceTag.careers);
+        revalidateTag(careerServiceTag.career(data.slug));
         break;
       }
       case CmsContentType.Website: {

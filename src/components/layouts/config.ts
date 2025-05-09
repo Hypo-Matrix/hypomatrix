@@ -26,6 +26,8 @@ export const desktopLinks: Link[] = [
       { title: "About Us", href: paths.about },
       { title: "Our Services", href: paths.services.root },
       { title: "Service Details", href: paths.services.details("slug") },
+      { title: "Careers", href: paths.careers.root },
+      { title: "Career Details", href: paths.careers.details("slug") },
       { title: "Our Team", href: paths.team.root },
       { title: "Team Details", href: paths.team.details("slug") },
       { title: "Pricing", href: "/pricing" },
