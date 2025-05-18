@@ -5,6 +5,7 @@ export type TCareer = {
   slug: string;
   applicationEndDate: string;
   sector: string;
+  salary:number;
   description: string;
   title: string;
   thumbnail: TAsset;
@@ -18,19 +19,3 @@ export type TCareer = {
   featured: boolean;
   metaTags?: TMetaTag;
 };
-// import { TMetaTag } from "./common";
-
-// export type TCareer = {
-//   id: string;
-//   slug: string;
-//   applicationEndDate: string;
-//   sector: string;
-//   content: {
-//     html: string;
-//   };
-//   position: string;
-//   contractType: "Full Time" | "Contact Basis" | "Part Time";
-//   workType: "Remote" | "On-Site" | "Hybrid";
-//   applyUrl: string;
-//   metaTags?: TMetaTag;
-// };

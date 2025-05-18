@@ -21,6 +21,7 @@ const DetailsSection = (props: Props) => {
             src={career.thumbnail.url}
             alt={career.position}
             fill
+            priority
             className="object-cover rounded-xl"
           />
         </div>
@@ -37,9 +38,9 @@ const DetailsSection = (props: Props) => {
             {/* Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 sm:gap-y-4 gap-x-16">
               <div>
-                <span className="text-muted-foreground">Category</span>
+                <span className="text-muted-foreground">Salary</span>
                 <p className="font-heading text-heading-5 font-bold">
-                  {career.sector}
+                  {career.salary} BDT
                 </p>
               </div>
               <div>

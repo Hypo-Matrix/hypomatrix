@@ -20,7 +20,6 @@ const CareerDetailsView = (props: Props) => {
         ]}
       />
       <DetailsSection career={career} />
-      {/* <FormSection /> */}
     </div>
   );
 };
