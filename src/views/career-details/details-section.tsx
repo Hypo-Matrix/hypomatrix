@@ -36,7 +36,7 @@ const DetailsSection = (props: Props) => {
           </div>
           <div className="mb-16 mt-10">
             {/* Details */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 sm:gap-y-4 gap-x-16">
+            <div className="flex justify-start items-center gap-y-5 sm:gap-y-4 gap-x-16">
               <div>
                 <span className="text-muted-foreground">Salary</span>
                 <p className="font-heading text-heading-5 font-bold">
