@@ -15,7 +15,10 @@ const CareerCard = async (props: Props) => {
   return (
     <Card key={data.id} className="rounded-[22px] bg-card">
       <CardContent>
-        <h3 className="text-2xl font-bold">{data.position}</h3>
+       <div className="flex justify-between items-center">
+         <h3 className="text-2xl font-bold">{data.position}</h3>
+        <h2 className="border border-primary rounded-full px-[10px] py-[4px] text-sm">{data.salary} BDT</h2>
+       </div>
         <p className="text-muted-foreground mt-3 mb-10">
           <span className="text-primary">{data.sector}</span>
           <span> | </span>

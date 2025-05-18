@@ -6,6 +6,7 @@ const commonQuery = `
     contractType
     slug
     workType
+    salary
     title
     thumbnail ${assetImageQuery}
     position
