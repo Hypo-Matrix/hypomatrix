@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import { LinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Form from "./form";
+import FormSection from "./form-section";
 
 type Props = {
   career: TCareer;
@@ -70,7 +70,7 @@ const DetailsSection = (props: Props) => {
         dangerouslySetInnerHTML={{ __html: career.content.html }}
       />
 
-      <Form id="apply-form" applyUrl={career.applyUrl} />
+      <FormSection applyUrl={career.applyUrl} />
     </section>
   );
 };
