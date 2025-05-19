@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TCareer } from "@/types/cms/career";
+import { formatPrice } from "@/utils/number";
 import { format } from "date-fns";
 import { LinkIcon } from "lucide-react";
 import Image from "next/image";
@@ -40,7 +41,7 @@ const DetailsSection = (props: Props) => {
               <div>
                 <span className="text-muted-foreground">Salary</span>
                 <p className="font-heading text-heading-5 font-bold">
-                  {career.salary} BDT
+                  {formatPrice(career.salary, "BDT")}
                 </p>
               </div>
               <div>

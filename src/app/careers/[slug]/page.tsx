@@ -20,7 +20,7 @@ const CareerDetailsPage = async (props: Props) => {
 
   return (
     <>
-      <Script src="https://tally.so/widgets/embed.js"></Script>
+      <Script src="/tally/embed.js" strategy="afterInteractive"></Script>
       <CareerDetailsView career={careerRes.data} />
     </>
   );
