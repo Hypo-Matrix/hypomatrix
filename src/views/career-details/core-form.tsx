@@ -6,7 +6,7 @@ const CoreForm = (props: Props) => {
   const { id, applyUrl } = props;
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && "Tally" in window) {
       window.Tally.loadEmbeds();
     }
   }, []);
@@ -24,11 +24,13 @@ const CoreForm = (props: Props) => {
         data-tally-src={applyUrl}
         loading="lazy"
         width="100%"
+        height="300"
         // @ts-expect-error - props from tally
         frameborder="0"
         marginheight="0"
         marginwidth="0"
         title="null"
+        onError={(e) => console.log(e)}
       ></iframe>
     </div>
   );
