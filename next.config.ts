@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.graphassets.com",
       },
+       {
+        protocol: "https",
+        hostname: "**.hypomatrix.com",
+      },
+       {
+        protocol: "https",
+        hostname: "hypomatrix.com",
+      },
     ],
   },
 };

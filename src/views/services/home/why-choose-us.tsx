@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
           <div className="aspect-square relative max-w-[500px] lg:ml-auto">
             <Image
               src={img}
-              alt="Carousel Image"
+              alt="image not found"
               fill
               className="rounded-2xl object-cover"
             />
