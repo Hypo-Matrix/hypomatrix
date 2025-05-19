@@ -4,6 +4,7 @@ import { generatePageMetadata } from "@/utils/page-metadata";
 import CareerDetailsView from "@/views/career-details";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -19,6 +20,7 @@ const CareerDetailsPage = async (props: Props) => {
 
   return (
     <>
+      <Script src="https://tally.so/widgets/embed.js"></Script>
       <CareerDetailsView career={careerRes.data} />
     </>
   );
