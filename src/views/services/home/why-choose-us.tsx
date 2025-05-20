@@ -1,4 +1,4 @@
-import img from "@/assets/ceo-square.jpg";
+/* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/common/section-header";
 import CommonMotionBox from "@/lib/motion/common-motion";
 import Image from "next/image";
@@ -24,10 +24,9 @@ const WhyChooseUs = () => {
 
         <div className="col-span-1 lg:col-span-1 hidden lg:block">
           <div className="aspect-square relative max-w-[500px] lg:ml-auto">
-            <Image
-              src={img}
+            <img
+              src="/ceo-square.jpg"
               alt="image not found"
-              fill
               className="rounded-2xl object-cover"
             />
           </div>
