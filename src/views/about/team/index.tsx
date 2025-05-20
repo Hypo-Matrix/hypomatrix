@@ -13,7 +13,7 @@ async function TeamSection() {
         <SectionHeader
           title={"Meet the Minds Behind the Magic"}
           subtitle={"Our Experts"}
-          className="md:mb-[100px] mb-[50px] max-w-2xl mx-auto"
+          className="md:mb-[100px] mb-[50px] max-w-2xl mx-auto px-4 md:px-0"
           align="center"
         />
 
