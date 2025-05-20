@@ -11,7 +11,7 @@ async function TeamSection() {
     <section id="team" className="md:py-[130px] py-[50px]">
       <CommonMotionBox>
         <SectionHeader
-          title={"Success Stories From Around the Globe"}
+          title={"Meet the Minds Behind the Magic"}
           subtitle={"Our Experts"}
           className="md:mb-[100px] mb-[50px] max-w-2xl mx-auto"
           align="center"

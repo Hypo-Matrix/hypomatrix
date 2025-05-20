@@ -1,4 +1,4 @@
-import img from "@/assets/ceo-square.jpg";
+/* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/common/section-header";
 import { Button } from "@/components/ui/button";
 import CommonMotionBox from "@/lib/motion/common-motion";
@@ -39,11 +39,10 @@ const Hero = () => {
 
         <div className="col-span-1 xl:col-span-1">
           <div className="relative aspect-square">
-            <Image
+            <img
               className="object-cover rounded-xl rounded-br-none"
-              src={img}
+              src="/ceo-square.jpg"
               alt="Strategic growth powered by HypoMatrix!"
-              fill
             />
             <div className="hidden sm:block absolute top-5 left-5 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 bg-primary text-primary-foreground px-4 py-6 rounded-lg">
               <h3 className="text-4xl font-semibold text-center">03+</h3>
