@@ -17,6 +17,6 @@ declare namespace NodeJS {
     NEXT_PUBLIC_CALENDLY_LINK: string;
 
     // Analytics
-    GA_GTM_ID: string;
+    GA_MEASUREMENT_ID: string;
   }
 }
