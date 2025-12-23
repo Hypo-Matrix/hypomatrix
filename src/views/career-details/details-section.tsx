@@ -23,7 +23,7 @@ const DetailsSection = (props: Props) => {
             alt={career.position}
             fill
             priority
-            className="object-cover rounded-xl"
+            className="object-contain rounded-xl"
           />
         </div>
 
@@ -38,12 +38,12 @@ const DetailsSection = (props: Props) => {
           <div className="mb-16 mt-10">
             {/* Details */}
             <div className="flex justify-start items-center gap-y-5 sm:gap-y-4 gap-x-16">
-              <div>
+              {career.salary && <div>
                 <span className="text-muted-foreground">Salary</span>
                 <p className="font-heading text-heading-5 font-bold">
                   {formatPrice(career.salary, "BDT")}
                 </p>
-              </div>
+              </div>}
               <div>
                 <span className="text-muted-foreground">Apply Before</span>
                 <p className="font-heading text-heading-5 font-bold">
