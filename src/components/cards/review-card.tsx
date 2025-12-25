@@ -36,7 +36,7 @@ const ReviewCard = (props: Props) => {
           ))}
         </div>
 
-        <blockquote className="md:text-lg">{data.review}</blockquote>
+        <blockquote className="">{data.review}</blockquote>
       </CardContent>
     </Card>
   );
