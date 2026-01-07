@@ -24,6 +24,9 @@ const RootLayout = async (props: Props) => {
 
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="HypoMatrix" />
+      </head>
       <body
         className={cn(headingFont.variable, bodyFont.variable, "antialiased")}
       >
