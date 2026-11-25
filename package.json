@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack --port 4500",
     "build": "next build",
     "start": "next start --port 4500",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "brand:generate": "node scripts/generate-brand-assets.mjs"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
@@ -57,6 +58,7 @@
     "@types/react-slick": "^0.23.13",
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "typescript": "^5.9.3"
   },
