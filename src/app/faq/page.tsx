@@ -5,6 +5,7 @@ import FaqView from "@/views/faq";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 const FaqPage = async () => {
   const pageRes = await getPage("faq");
 

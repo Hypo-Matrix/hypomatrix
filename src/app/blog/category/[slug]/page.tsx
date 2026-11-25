@@ -9,6 +9,8 @@ import BlogCategoryView from "@/views/blog/category";
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

@@ -54,57 +54,57 @@ export async function POST(req: NextRequest) {
   try {
     switch (type) {
       case CmsContentType.BlogCategory: {
-        revalidateTag(blogServiceTags.blogCategories);
+        revalidateTag((blogServiceTags.blogCategories), "max");
         break;
       }
       case CmsContentType.BlogPost: {
         const data = body.data as TBlogPost;
-        revalidateTag(blogServiceTags.blogPosts);
-        revalidateTag(blogServiceTags.blogPostsFeatured);
-        revalidateTag(blogServiceTags.blogPost(data.slug));
+        revalidateTag((blogServiceTags.blogPosts), "max");
+        revalidateTag((blogServiceTags.blogPostsFeatured), "max");
+        revalidateTag((blogServiceTags.blogPost(data.slug)), "max");
         break;
       }
       case CmsContentType.Client: {
-        revalidateTag(clientServiceTags.clients);
+        revalidateTag((clientServiceTags.clients), "max");
         break;
       }
       case CmsContentType.Faq: {
-        revalidateTag(faqServiceTags.faqs);
+        revalidateTag((faqServiceTags.faqs), "max");
         break;
       }
       case CmsContentType.Member: {
         const data = body.data as TMember;
-        revalidateTag(memberServiceTags.members);
-        revalidateTag(memberServiceTags.member(data.slug));
+        revalidateTag((memberServiceTags.members), "max");
+        revalidateTag((memberServiceTags.member(data.slug)), "max");
         break;
       }
       case CmsContentType.Page: {
         const data = body.data as TPage;
-        revalidateTag(pageServiceTags.pages);
-        revalidateTag(pageServiceTags.page(data.slug));
+        revalidateTag((pageServiceTags.pages), "max");
+        revalidateTag((pageServiceTags.page(data.slug)), "max");
         break;
       }
       case CmsContentType.Project: {
         const data = body.data as TProject;
-        revalidateTag(projectServiceTags.projects);
-        revalidateTag(projectServiceTags.projectsFeatured);
-        revalidateTag(projectServiceTags.project(data.slug));
+        revalidateTag((projectServiceTags.projects), "max");
+        revalidateTag((projectServiceTags.projectsFeatured), "max");
+        revalidateTag((projectServiceTags.project(data.slug)), "max");
         break;
       }
       case CmsContentType.Service: {
         const data = body.data as TService;
-        revalidateTag(serviceServiceTags.services);
-        revalidateTag(serviceServiceTags.service(data.slug));
+        revalidateTag((serviceServiceTags.services), "max");
+        revalidateTag((serviceServiceTags.service(data.slug)), "max");
         break;
       }
       case CmsContentType.Career: {
         const data = body.data as TCareer;
-        revalidateTag(careerServiceTag.careers);
-        revalidateTag(careerServiceTag.career(data.slug));
+        revalidateTag((careerServiceTag.careers), "max");
+        revalidateTag((careerServiceTag.career(data.slug)), "max");
         break;
       }
       case CmsContentType.Website: {
-        revalidateTag(websiteServiceTags.website);
+        revalidateTag((websiteServiceTags.website), "max");
         break;
       }
       default:

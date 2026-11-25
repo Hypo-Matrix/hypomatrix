@@ -6,6 +6,7 @@ import BlogView from "@/views/blog/home";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 type Props = {};
 
 const BlogPage = async (props: Props) => {

@@ -5,6 +5,7 @@ import TeamView from "@/views/team/home";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 const TeamPage = async () => {
   const pageRes = await getPage("team");
 

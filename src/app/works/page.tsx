@@ -5,6 +5,7 @@ import ProjectsView from "@/views/projects/home";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 type Props = {};
 
 const WorksPage = async (props: Props) => {

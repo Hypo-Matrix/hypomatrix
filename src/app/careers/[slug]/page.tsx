@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

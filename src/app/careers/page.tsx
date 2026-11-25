@@ -5,6 +5,7 @@ import CareersView from "@/views/career";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 const CareersPage = async () => {
   const pageRes = await getPage("careers");
 
