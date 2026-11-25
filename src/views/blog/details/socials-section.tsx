@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { SiFacebook, SiLinkedin, SiX } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
+import { SiFacebook, SiX } from "react-icons/si";
 
 type Props = {
   url: string;
@@ -44,7 +45,7 @@ const SocialsSection = ({ url }: Props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SiLinkedin size={18} />
+            <FaLinkedin size={18} />
           </a>
         </Button>
       </div>

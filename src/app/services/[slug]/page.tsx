@@ -5,6 +5,7 @@ import ServiceDetailsView from "@/views/services/details";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

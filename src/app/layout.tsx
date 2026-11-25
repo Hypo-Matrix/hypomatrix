@@ -9,6 +9,7 @@ import { ReactNode } from "react";
 import { bodyFont, headingFont } from "./fonts";
 import Providers from "./providers";
 
+
 type Props = {
   children: ReactNode;
 };

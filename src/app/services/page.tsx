@@ -5,6 +5,7 @@ import ServicesView from "@/views/services/home";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 const ServicesPage = async () => {
   const pageRes = await getPage("services");
 

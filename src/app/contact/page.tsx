@@ -5,6 +5,7 @@ import ContactView from "@/views/contact";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 const ContactPage = async () => {
   const pageRes = await getPage("contact");
 

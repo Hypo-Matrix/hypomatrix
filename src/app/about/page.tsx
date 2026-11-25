@@ -5,6 +5,7 @@ import AboutView from "@/views/about";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 type Props = {};
 
 const AboutPage = async (props: Props) => {

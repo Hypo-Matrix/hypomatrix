@@ -3,6 +3,8 @@ import { generatePageMetadata } from "@/utils/page-metadata";
 import PageDetailsView from "@/views/page-details";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
